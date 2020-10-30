@@ -1,4 +1,8 @@
 body.logged_in {
+  &.new, &.edit, &.create, &.update {
+    @include sidebar-container();
+  }
+
   form.formtastic {
     & legend {
       font-weight: normal;
